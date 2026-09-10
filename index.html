@@ -5,7 +5,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wired</title>
-    <link rel="stylesheet" href="style.css">
+
+```
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #050b14;
+        color: white;
+        text-align: center;
+    }
+
+    nav {
+        background: #071525;
+        padding: 20px;
+        border-bottom: 2px solid #1683ff;
+    }
+
+    nav h2 {
+        color: #1683ff;
+        font-size: 28px;
+        letter-spacing: 4px;
+        margin-bottom: 15px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #1683ff;
+    }
+
+    .hero {
+        padding: 120px 20px;
+        background: linear-gradient(#071a31, #050b14);
+    }
+
+    .hero-box {
+        max-width: 800px;
+        margin: auto;
+        padding: 60px 30px;
+        border: 2px solid #1683ff;
+        border-radius: 20px;
+        background: #081525;
+        box-shadow: 0 0 30px rgba(22, 131, 255, 0.25);
+    }
+
+    .hero h1 {
+        font-size: 70px;
+        color: #1683ff;
+        letter-spacing: 8px;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        color: #b8c9dc;
+        margin-bottom: 30px;
+    }
+
+    .button {
+        display: inline-block;
+        background: #1683ff;
+        color: white;
+        padding: 15px 35px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .button:hover {
+        background: #0066cc;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    section h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .cards {
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 280px;
+        padding: 35px 25px;
+        background: #081525;
+        border: 1px solid #174b7a;
+        border-radius: 15px;
+    }
+
+    .card:hover {
+        border-color: #1683ff;
+        transform: translateY(-5px);
+    }
+
+    .card h3 {
+        color: #1683ff;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .card p {
+        color: #9fb4ca;
+        line-height: 1.6;
+    }
+
+    .contact {
+        background: #071525;
+    }
+
+    .contact-box {
+        max-width: 600px;
+        margin: auto;
+        padding: 35px;
+        border: 1px solid #174b7a;
+        border-radius: 15px;
+        background: #081525;
+    }
+
+    .contact-box p {
+        margin: 12px;
+        color: #b8c9dc;
+    }
+
+    footer {
+        padding: 25px;
+        color: #71869c;
+        background: #03070d;
+    }
+
+    @media (max-width: 600px) {
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        nav a {
+            margin: 5px;
+        }
+    }
+</style>
+```
+
 </head>
 
 <body>
@@ -14,7 +177,7 @@
 <nav>
     <h2>WIRED</h2>
 
-    <div class="nav-links">
+    <div>
         <a href="#home">Home</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
@@ -23,7 +186,6 @@
 
 <section id="home" class="hero">
     <div class="hero-box">
-        <p class="small-title">WELCOME TO</p>
         <h1>WIRED</h1>
         <p>Professional service you can count on.</p>
         <a href="#services" class="button">Get Started</a>
@@ -31,41 +193,45 @@
 </section>
 
 <section id="services">
-    <h2 class="section-title">Our Services</h2>
+    <h2>Our Services</h2>
 
     <div class="cards">
+
         <div class="card">
-            <div class="icon">01</div>
             <h3>Service One</h3>
-            <p>Description of your service goes here.</p>
+            <p>
+                Add information about your first service here.
+            </p>
         </div>
 
         <div class="card">
-            <div class="icon">02</div>
             <h3>Service Two</h3>
-            <p>Description of your service goes here.</p>
+            <p>
+                Add information about your second service here.
+            </p>
         </div>
 
         <div class="card">
-            <div class="icon">03</div>
             <h3>Service Three</h3>
-            <p>Description of your service goes here.</p>
+            <p>
+                Add information about your third service here.
+            </p>
         </div>
+
     </div>
 </section>
 
 <section id="contact" class="contact">
-    <h2 class="section-title">Contact Us</h2>
+    <h2>Contact Us</h2>
 
     <div class="contact-box">
-        <p>Have a question or want to work with us?</p>
-        <p><strong>Email:</strong> yourbusiness@email.com</p>
-        <p><strong>Phone:</strong> (555) 555-5555</p>
+        <p>Email: yourbusiness@email.com</p>
+        <p>Phone: (555) 555-5555</p>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 WIRED. All rights reserved.</p>
+    © 2026 WIRED
 </footer>
 ```
 
